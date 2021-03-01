@@ -30,14 +30,14 @@ with open(path.join(here, 'CHANGELOG.rst'), encoding='utf-8') as f:
 
 setup(
     name='knockpy',
-    version='4.1.1',
+    version='5.0.0',
 
     description='Knock is a python tool designed to enumerate subdomains on a target domain through a wordlist.',
     long_description=long_description,
-    url='https://github.com/guelfoweb/knock',
+    url='https://github.com/NeoArcanjo/knock',
 
-    author='Gianni \'guelfoweb\' Amato',
-    author_email='guelfoweb@gmail.com',
+    author='Rafael \'neo\' Arcanjo',
+    author_email='rexmundi.rafael@gmail.com',
 
     license='GNU',
 
@@ -47,7 +47,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Production/Stable',
+        'Development Status :: 4 - Beta',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
@@ -58,9 +58,9 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 
     keywords='knock sudbomain scan',
@@ -70,7 +70,7 @@ setup(
 		'knockpy': ['wordlist/*.txt', '*.json'], 
 	},
     
-	install_requires = ['dnspython>=1.3.5'],
+	install_requires = ['dnspython>=2.0.0'],
 
     entry_points={
         'console_scripts': [
