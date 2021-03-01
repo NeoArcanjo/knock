@@ -1,10 +1,12 @@
 import time
 import json
 
+
 def touch(filename):
 	fname = filename
 	file = open(fname, 'w')
 	file.close()
+
 
 def export(domain, report, _type, fields=False):
 	timestamp = time.time()
@@ -21,5 +23,5 @@ def export(domain, report, _type, fields=False):
 			f.write(report)
 		f.close()
 		return '\n'+_type.upper()+' report saved in: '+filename
-	except: 
+	except:
 		return '\nCannot write report file: '+filename
