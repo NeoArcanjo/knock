@@ -1,1 +1,6 @@
-dnspython
+2to3==1.0
+autopep8==1.5.5
+dnspython==2.1.0
+knockpy==5.0.0
+pycodestyle==2.6.0
+toml==0.10.2
